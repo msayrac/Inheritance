@@ -3,9 +3,7 @@ public class Main {
 
         Calisan c1 = new Calisan("Ahmet","12345","a@gmail");
 
-        c1.giris();
-        c1.cikis();
-        c1.yemekHane();
+
 
 
 
