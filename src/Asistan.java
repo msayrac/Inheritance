@@ -1,4 +1,4 @@
-public class Asistan extends Akademisyen {
+public abstract class Asistan extends Akademisyen {
     private String officeSaati;
 
     public Asistan(String adSoyad, String telefon, String ePosta, String bolum, String unvan,String officeSaati) {

@@ -19,4 +19,10 @@ public class GuvenlikGorevlisi extends Memur {
     public void nobet(){
         System.out.println(this.getAdSoyad() + " nobet tuttu");
     }
+
+    public  void calis(){
+
+        System.out.println(this.getAdSoyad() + " guvenlik  calısmaya basladi");
+
+    }
 }

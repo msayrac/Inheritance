@@ -1,4 +1,4 @@
-public class Calisan {
+public  abstract class Calisan {
 
     private String adSoyad;
     private String telefon;
@@ -11,14 +11,30 @@ public class Calisan {
     }
 
     public void giris(){
-        System.out.println(this.adSoyad + " universiteye giris yapti.");
+        System.out.println(this.getAdSoyad() + " universiteye giris yapti.");
     }
+
+    public void giris(String girisSaati){
+        System.out.println(this.getAdSoyad() + " "+ girisSaati + " universiteye giris yapti");
+    }
+
+
+
     public  void cikis(){
-        System.out.println(this.adSoyad + " universiteden cikis yapti.");
+        System.out.println(this.getAdSoyad() + " universiteden cikis yapti.");
     }
 
     public void yemekHane(){
-        System.out.println(this.adSoyad + " yemekhaneye giris yapti.");
+        System.out.println(this.getAdSoyad() + " yemekhaneye giris yapti.");
+    }
+
+    public static void girisYapanlar(Calisan[] loginUsers){
+
+        for(Calisan c : loginUsers){
+            c.giris();
+
+        }
+
     }
 
 

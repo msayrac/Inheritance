@@ -17,4 +17,11 @@ public class BilgiI_islem extends Memur{
     public void networkKurulumu(){
         System.out.println(this.getAdSoyad() + " netwwork kurulumu yapti");
     }
+
+    @Override
+    public void calis() {
+
+        System.out.println(this.getAdSoyad() + " bilgş isle calısmaya basladi");
+
+    }
 }

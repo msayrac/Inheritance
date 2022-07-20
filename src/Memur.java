@@ -1,4 +1,4 @@
-public class Memur extends Calisan{
+public abstract class Memur extends Calisan{
     private String departman;
     private String mesai;
 
@@ -25,7 +25,9 @@ public class Memur extends Calisan{
         this.mesai = mesai;
     }
 
-    public void calis(){
-        System.out.println(this.getAdSoyad() + " memur gorevini yapıyor.");
+    public abstract void calis();
+    @Override
+    public void giris(){
+        System.out.println(this.getAdSoyad() + "  memmur C kapisindan giris yapti.");
     }
 }
